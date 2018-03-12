@@ -9,8 +9,8 @@
 
 ; Assuming an applicative-order evaluation, this program will never stop
 ; executing because it will evaluate its operator and operands first, that is,
-; `test`, `0` and `(p)` are evaluated first before applying `test` to its
-; operands. The evaluation of `(p)` will result in an infinite loop.
+; `test`, `0` and `(p)` are evaluated first before applying the `test` procedure
+; to its operands. The evaluation of `(p)` will result in an infinite loop.
 
 ; Assuming a normal-order evaluation, this program will stop executing because
 ; it lazy-evaluates its operands, that is, the evaluation of the operands is
